@@ -1,0 +1,11 @@
+/venv
+venv
+.env
+/car_blog/.env
+/car_blog/car_blog/.env
+/car_blog/blog/.env
+*/.env
+
+db.sqlite3
+/car_blog/db.sqlite3
+*/*.sqlite3

@@ -10,7 +10,9 @@ class ElementSerializer(serializers.ModelSerializer):
             "innerHtml",
             "element_type",
             "image",
-            "thumbnail"
+            "thumbnail",
+            "get_image",
+            "get_thumbnail"
         )
 
 class PostSerializer(serializers.ModelSerializer):
@@ -33,5 +35,5 @@ class CategorySerializer(serializers.ModelSerializer):
             "id",
             "name",
             "get_absolute_url",
-            "posts"
+            "posts",
         )

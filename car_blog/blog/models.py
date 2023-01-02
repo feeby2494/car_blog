@@ -9,6 +9,7 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField()
+    
     class Meta:
         ordering = ('name',)
 
@@ -28,6 +29,7 @@ class Post(models.Model):
     slug = models.SlugField()
     short_desc = models.TextField(blank=True, null=True)
     date_added = models.DateTimeField(auto_now_add=True)
+
     class Meta:
         ordering = ('-date_added',)
 
@@ -47,6 +49,7 @@ class Element(models.Model):
     element_type = models.CharField(max_length=50)
     image = models.ImageField(upload_to='uploads/', blank=True, null=True)
     thumbnail = models.ImageField(upload_to='uploads/', blank=True, null=True)
+
     class Meta:
         ordering = ('id',)
 

@@ -3,7 +3,9 @@ venv
 .env
 /car_blog/.env
 /car_blog/car_blog/.env
+/car_blog/vocab_cards/.env
 /car_blog/blog/.env
+
 */.env
 
 db.sqlite3
